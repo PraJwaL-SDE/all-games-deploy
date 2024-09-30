@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game Portal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a73e8, #34a853);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        header, footer {
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #FFD700;
+            text-shadow: 2px 2px #000;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            margin: 20px 0;
+            background: #FFF;
+            padding: 15px 25px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        li:hover {
+            transform: scale(1.1) rotateY(20deg) rotateX(10deg);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nagrik Aur Savidhan</h1>
+        <h2>The portal is created as a prototype for SIH PS_ID - 1703</h2>
+
+    </header>
+
+    <ul>
+        <li onclick="window.location.href='https://prajwal-sde.github.io/spin-the-wheel/'">Spin the Wheel Game</li>
+        <li onclick="window.location.href='bucket-game.html'">Bucket Game</li>
+        <li onclick="window.location.href='https://prajwal-sde.github.io/carrom-game-deploy/'">Carrom</li>
+        <li onclick="window.location.href='word-search.html'">Word Search Game</li>
+        <li onclick="window.location.href='word-code.html'">Word Code Game</li>
+
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 Game Portal | Designed for fun!</p>
+    </footer>
+
+    <script>
+        // Add any future JS functionality here
+    </script>
+</body>
+</html>
